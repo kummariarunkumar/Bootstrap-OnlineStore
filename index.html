@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00014a49bc.js" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- bootstrap link -->
+</head>
+<body>
+    <!-- Top Nav -->
+    <div class="top-nav w-100">
+        <div class="container">
+            <div class="row justify-content-between align-items-center py-2">
+                <div class="col-auto">
+                    <h5>Welcome to Online store</h5>
+                </div>
+                <div class="col-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a><i class="fas fa-envelope"></i> Contact</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fas fa-language"></i>
+                            <select class="custom-select-option" onchange="location = this.value">
+                                <option value="#">English</option>
+                                <option value="#">Spanish</option>
+                            </select>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <select class="custom-select-option" onchange="location = this.value">
+                                <option value="#">USD</option>
+                                <option value="#">EUR</option>
+                            </select>
+                        </li>
+                        <li class="list-inline-item">
+                            <a><i class="fas fa-sign-in-alt"></i> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo">Online Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                  <li><a class="dropdown-item" href="#todayoffers">Today Offers</a></li>
+                  <li><a class="dropdown-item" href="#bestseller">Best Sellers</a></li>
+                  <li><a class="dropdown-item" href="#">Cameras</a></li>
+                  <li><a class="dropdown-item" href="#">Fridge</a></li>
+                  <li><a class="dropdown-item" href="#">AC</a></li>
+                  <li><a class="dropdown-item" href="#">Samrt Watch</a></li>
+                  <li><a class="dropdown-item" href="#">Headphone</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">PC Moniter</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">$0.00</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+
+
+    <!-- home content -->
+    <section class="home">
+        <!-- Categories and Main Content -->
+        <div class="container main-content">
+            <div class="row">
+                <!-- Categories -->
+                <div class="col-md-2 hh">
+                    <h5>All Categories</h5>
+                    <ul class="category-list">
+                        <li class="category-item"><i class="las la-microchip"></i> Electronics</li>
+                        <li class="category-item"><i class="las la-tv"></i></i> Televisions</li>
+                        <li class="category-item"> <i class="lar la-clock"></i></i> Watches</li>
+                        <li class="category-item"> <i class="las la-tshirt"></i> Tshirts</li>
+                        <li class="category-item"><i class="las la-suitcase-rolling"></i> Backpacks</li>
+                        <li class="category-item"> <i class="las la-tablet"></i> Tablets</li>
+                        <li class="category-item"><i class="las la-headphones"></i> Headphones</li>
+                        <li class="category-item"><i class="las la-fire"></i> Hot Sale</li>
+                        <li class="category-item"><i class="las la-shoe-prints"></i> Shoes</li>
+                    </ul>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-md-7 margin-left-0 scroll">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./image/new-apple-gadgets-coming-in-2021-640-1629106170.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Xiaomi Speaker</h5>
+                                    <p>There are an upgrade for the quality and control in the home.</p>
+                                    <a class="btn btn-primary" href="#" role="button">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./image/e-commerce-product-image-editing-services.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>I Phone 6+ 32 GB</h5>
+                                    <p>Upto 50% Off</p>
+                                    <a class="btn btn-primary" href="#" role="button">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./image/e-commerce-product-image-editing-services.jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Unio Leather Bags</h5>
+                                    <p>Starting: $79</p>
+                                    <a class="btn btn-primary" href="#" role="button">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./image/new-apple-gadgets-coming-in-2021-640-1629106170.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>I Phone 6+ 32 GB</h5>
+                                    <p>Upto 50% Off</p>
+                                    <a class="btn btn-primary" href="#" role="button">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="row mt-2 icon-container">
+                        <div class="col-4 icon">
+                            <img src="./image/vegetables-pictures-qs8trfk65nvldcyr.jpg" class="img-fluid" alt="Icon 1">
+                            <p>Vegetables</p>
+                        </div>
+                        <div class="col-4 icon">
+                            <img src="./image/images.jpeg" class="img-fluid" alt="Icon 2">
+                            <p>Fruits</p>
+                        </div>
+                        <div class="col-4 icon">
+                            <img src="./image/main-qimg-2f17b9ded31d26b0c23f28b470d721aa-lq.jpeg" class="img-fluid" alt="Icon 3">
+                            <p>Biriyani</p>
+                        </div>
+                        <div class="marquee-container mt-3">
+                            <marquee behavior="scroll" direction="left">
+                                <p>Welcome to online store. All products purchase all from any where.</p>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Image Card -->
+                <div class="col-md-3 sidecard">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Electronics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Explore more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mens Wear</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home content -->
+
+    <div class="container my-5">
+      <div class="brand-carousel">
+          <div class="scrolling-wrapper">
+              <!-- Image Set 1 -->
+              <div class="scrolling-item">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Dell">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="HP">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Huawei">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="LG">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="MSI">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Sony">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Samsung">
+              </div>
+              <!-- Duplicate Image Set for Continuous Effect -->
+              <div class="scrolling-item">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Dell">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="HP">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Huawei">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="LG">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="MSI">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Sony">
+                  <img src="./image/71p-M3sPhhL.jpg" alt="Samsung">
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+    <section style="background-color:white">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+              <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                  <p class="lead mb-0">Today's Combo Offer</p>
+                  <div
+                    class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                    style="width: 35px; height: 35px;">
+                    <p class="text-white mb-0 small">x4</p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                  class="card-img-top" alt="Laptop" />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                    <p class="small text-danger"><s>$1099</s></p>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">HP Notebook</h5>
+                    <h5 class="text-dark mb-0">$999</h5>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-2">
+                    <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                    <div class="ms-auto text-warning">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="todayoffers" class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                  <p class="lead mb-0">Today's Combo Offer</p>
+                  <div
+                    class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                    style="width: 35px; height: 35px;">
+                    <p class="text-white mb-0 small">x2</p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                  class="card-img-top" alt="Laptop" />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                    <p class="small text-danger"><s>$1199</s></p>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">HP Envy</h5>
+                    <h5 class="text-dark mb-0">$1099</h5>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-2">
+                    <p class="text-muted mb-0">Available: <span class="fw-bold">7</span></p>
+                    <div class="ms-auto text-warning">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                  <p class="lead mb-0">Today's Combo Offer</p>
+                  <div
+                    class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                    style="width: 35px; height: 35px;">
+                    <p class="text-white mb-0 small">x3</p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                  class="card-img-top" alt="Gaming Laptop" />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                    <p class="small text-danger"><s>$1399</s></p>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">Toshiba B77</h5>
+                    <h5 class="text-dark mb-0">$1299</h5>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-2">
+                    <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                    <div class="ms-auto text-warning">
+                      <i class="fa fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Top Categories in Sales and Trending</h2>
+          <p class="text-center">Last Month up to 1500+ Products Sales From this category. You can choose a product from here and save money.</p>
+          
+          <div class="text-center mb-4">
+            <button id="laptopsBtn" class="category-button active" onclick="showCategory('laptops')">
+              <img src="./image/71p-M3sPhhL.jpg" alt="Laptops">
+              <div>Laptops</div>
+            </button>
+            <button id="mobilesBtn" class="category-button" onclick="showCategory('mobiles')">
+              <img src="./image/istockphoto-1210049023-612x612.jpg" alt="Mobiles">
+              <div>Mobiles</div>
+            </button>
+            <button id="tabletsBtn" class="category-button" onclick="showCategory('tablets')">
+              <img src="./image/besttablets-2048px-9875.jpg" alt="Tablets">
+              <div>Tablets</div>
+            </button>
+            <button id="watchesBtn" class="category-button" onclick="showCategory('watches')">
+              <img src="./image/654b8e16333d0d5c3130b3e8-lige-mens-watches-waterproof-stainless.jpg" alt="Watches">
+              <div>Watches</div>
+            </button>
+            <button id="mensFashionBtn" class="category-button" onclick="showCategory('mensFashion')">
+              <img src="./image/Main-Image---iStock_6468788f18ba9.jpeg" alt="Men's Fashion">
+              <div>Men's Fashion</div>
+            </button>
+            <button id="televisionsBtn" class="category-button" onclick="showCategory('televisions')">
+              <img src="./image/tv-by-price-mobile.jpg" alt="Televisions">
+              <div>Televisions</div>
+            </button>
+            <button id="acBtn" class="category-button" onclick="showCategory('ac')">
+              <img src="./image/Air-Conditioner-Buying-Guide-750x375.jpg" alt="ac">
+              <div>Air-Conditioner</div>
+            </button>
+            <button id="washingmachineBtn" class="category-button" onclick="showCategory('washingmachine')">
+              <img src="./image/washing ma.png" alt="washingmachine">
+              <div>washingmachine</div>
+            </button>
+            <button id="fridgeBtn" class="category-button" onclick="showCategory('fridge')">
+              <img src="./image/fridge.jpg" alt="fridge">
+              <div>Fridge</div>
+            </button>
+          </div>
+      
+          <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="products">
+              <!-- Products will be displayed here -->
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      
+        <script>
+          const products = {
+            laptops: [
+              { name: "Apple MacBook Pro 2019 Model", price: "$999.00", img: "./image/Laptops/laptop1.jpg" },
+              { name: "HP Spectre x360 2-in-1 15.6\" 4K", price: "$1,300.00",  img: "./image/Laptops/laptop2.jpg" },
+              { name: "Dell XPS 13 9380, 13.3\" 4K UHD", price: "$1,199.66", img: "./image/Laptops/laptop6.jpg" },
+              { name: "Huawei Kepler MateBook D 14\"", price: "$699.99", img: "./image/Laptops/laptop5.jpg" },
+              { name: "HP Spectre x360 2-in-1 15.6\" 4K", price: "$1,300.00",  img: "./image/Laptops/laptop3.jpg" },
+              { name: "Dell XPS 13 9380, 13.3\" 4K UHD", price: "$1,199.66", img: "./image/Laptops/laptop2.jpg" },
+              { name: "Huawei Kepler MateBook D 14\"", price: "$699.99", img: "./image/Laptops/laptop1.jpg" },
+              { name: "Acer Swift 3 SF315-41G-R6MP", price: "$750.00", oldPrice: "$901.00", img: "./image/Laptops/laptop2.jpg" },
+            ],
+            mobiles: [
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+            
+            ],
+            tablets: [
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+            
+            ],
+            watches: [
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+            
+            ],
+            mensFashion: [
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+            
+            ],
+            ac: [
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+            
+            ],
+            washingmachine: [
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+              { name: "iPhone X", price: "$999.00", img: "https://via.placeholder.com/150" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "https://via.placeholder.com/150" },
+            
+            ],
+            fridge: [
+              { name: "iPhone X", price: "$999.00", img: "./image/fridge.jpg" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "./image/fridge/fridge1.jpg" },
+              { name: "iPhone X", price: "$999.00", img: "./image/fridge/fridge3.jpg" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "./image/fridge/fridge2.jpeg" },
+              { name: "iPhone X", price: "$999.00", img: "./image/fridge/fridge1.jpg" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "./image/fridge/fridge3.jpg" },
+              { name: "iPhone X", price: "$999.00", img: "./image/fridge/fridge1.jpg" },
+              { name: "Samsung Galaxy S10", price: "$899.00", img: "./image/fridge/fridge2.jpeg" },
+            
+            ],
+            // Add more categories as needed
+          };
+      
+          function showCategory(category) {
+            const productsContainer = document.getElementById('products');
+            productsContainer.innerHTML = ''; // Clear previous products
+      
+            const row = document.createElement('div');
+            row.className = 'row';
+            products[category].forEach(product => {
+              const productCard = document.createElement('div');
+              productCard.className = 'col-md-4';
+              productCard.innerHTML = `
+                <div class="product-card">
+                  <img src="${product.img}" alt="${product.name}">
+                  <h5 class="mt-2">${product.name}</h5>
+                  <div class="price">${product.price}</div>
+                  ${product.oldPrice ? `<div class="old-price">${product.oldPrice}</div>` : ''}
+                </div>
+              `;
+              row.appendChild(productCard);
+            });
+      
+            const carouselItem = document.createElement('div');
+            carouselItem.className = 'carousel-item active';
+            carouselItem.appendChild(row);
+            productsContainer.appendChild(carouselItem);
+      
+            // Remove active class from all buttons
+            document.querySelectorAll('.category-button').forEach(button => {
+              button.classList.remove('active');
+            });
+      
+            // Add active class to the clicked button
+            document.getElementById(`${category}Btn`).classList.add('active');
+          }
+      
+          // Show laptops category on initial load
+          document.addEventListener('DOMContentLoaded', () => {
+            showCategory('laptops');
+          });
+        </script>
+    
+
+      
+      <section id="bestseller" style="background-color: white;">
+        <div class="text-center container py-5">
+          <h4 class="mt-3 mb-4"><strong>Bestsellers</strong></h4>
+      
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                  data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+                    class="w-100" />
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">$61.99</h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                  data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                    class="w-100" />
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">$61.99</h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
+                    class="w-100" />
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
+                    class="w-100" />
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                  </h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                  data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
+                    class="w-100" />
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">$61.99</h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
+                    class="w-100" />
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+      <h2 class="text-center mb-4">Top Categories in Sales and Trending</h2>
+      <p class="text-center">Last Month up to 1500+ Products Sales From this category. You can choose a product from here and save money.</p>
+      
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/p6.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Iphone 13 pro</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$1000 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/a1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Airpods</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$100 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/laptop2.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Laptop</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$200 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/t1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Ipad</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$300 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/w1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Smart Watch</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$50.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pcm1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">PC Moniter</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$600 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/phone1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">iPhone x</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/h1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Headphone</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+    <section >
+        <div class="container py-4">
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Quant trident shirts</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>310</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% cotton</span>
+                        <span class="text-primary"> • </span>
+                        <span>Light weight</span>
+                        <span class="text-primary"> • </span>
+                        <span>Best finish<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Unique design</span>
+                        <span class="text-primary"> • </span>
+                        <span>For men</span>
+                        <span class="text-primary"> • </span>
+                        <span>Casual<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">$13.99</h4>
+                        <span class="text-danger"><s>$20.99</s></span>
+                      </div>
+                      <h6 class="text-success">Free shipping</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2" type="button">
+                          Add to wishlist
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(4).webp"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Quant olap shirts</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>289</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% cotton</span>
+                        <span class="text-primary"> • </span>
+                        <span>Light weight</span>
+                        <span class="text-primary"> • </span>
+                        <span>Best finish<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Unique design</span>
+                        <span class="text-primary"> • </span>
+                        <span>For men</span>
+                        <span class="text-primary"> • </span>
+                        <span>Casual<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">$14.99</h4>
+                        <span class="text-danger"><s>$21.99</s></span>
+                      </div>
+                      <h6 class="text-success">Free shipping</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2" type="button">
+                          Add to wishlist
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(5).webp"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Quant ruybi shirts</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>145</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% cotton</span>
+                        <span class="text-primary"> • </span>
+                        <span>Light weight</span>
+                        <span class="text-primary"> • </span>
+                        <span>Best finish<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Unique design</span>
+                        <span class="text-primary"> • </span>
+                        <span>For women</span>
+                        <span class="text-primary"> • </span>
+                        <span>Casual<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">$17.99</h4>
+                        <span class="text-danger"><s>$25.99</s></span>
+                      </div>
+                      <h6 class="text-success">Free shipping</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2" type="button">
+                          Add to wishlist
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+    <!-- other cards -->
+    <div class="container" id="other-cards">
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c1.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Laptop</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c2.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Headphone</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+   
+
+
+
+
+
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Washion Machine</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$100.50 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr2.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">AC</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr3.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Microwave Oven</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$200.30 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr4.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fridge</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$300 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other cards -->
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c3.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Home Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c4.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Gaming Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c5.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Electronic Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr5.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fan</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$50.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr6.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fridge</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$1500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr7.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Gaming PC</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>500.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr8.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Moniter</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$250 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr9.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Smart Watch</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$30.20 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr10.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Power Bank</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$100.50 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr11.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Gaming Mouse</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$30 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr12.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Joysticks</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$150 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- offer -->
+    <div class="container" id="offer">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Free Shipping</h3>
+          <p>On order over $1000</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h3>Free Returns</h3>
+          <p>Within 30 days</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Fast Delivery</h3>
+          <p>World Wide</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h3>Big choice</h3>
+          <p>Of products</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+
+
+
+
+
+    
+    <!-- newslater -->
+    <div class="container" id="newslater">
+      <h3 class="text-center">Subscribe To The Electronic Shop For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- newslater -->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Contact US</h3>
+              <strong>Phone:</strong> +990123456789 <br>
+              <strong>Email:</strong> admin@email.com <br>
+              <div class="socail-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+             </ul>
+            </div>
+
+
+
+           
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+
+             <ul>
+              <li><a href="#">PS 5</a></li>
+              <li><a href="#">Computer</a></li>
+              <li><a href="#">Gaming Laptop</a></li>
+              <li><a href="#">Mobile Phone</a></li>
+              <li><a href="#">Gaming Gadget</a></li>
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+              
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Online Store</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Arun Kumar</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
